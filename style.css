@@ -1,0 +1,21 @@
+* {
+text-decoration: none;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.card {
+    display: flex; 
+    flex-direction: column; 
+    border-radius: 9px  9px 9px 9px;
+    width: 272px;
+    border-color: #000000;
+}
+
+
+
+
