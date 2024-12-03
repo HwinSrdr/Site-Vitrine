@@ -16,6 +16,33 @@ fetch(`https://fakestoreapi.com/products`)
 
 //Rôle: Afficher une produit dans la page html
 //Paramètre: Le produit
-function affiche (produit){
-    //afficher dans le dom les petites cartes
+function affiche (prod){
+    let img = prod.image
+    let nom = prod.title;
+    let description = prod.description;
+    let categorie = prod.category;
+    let rate = prod.rating.rate;
+    let count = prod.rating.count;
+    let prix = prod.price;
+
+
+let card = document.querySelector("#result")
+card.innerHTML += `
+            <div class="card">
+                <div class="relative">
+                    <img src="${img}" class="img" alt="">
+                    <p class="absolute categorie"> ${categorie} </p>
+                </div>
+                <div class="description ">
+
+                    <h2>${nom}</h2>
+                    <p>${description}</p>
+                    <div class="flex spaceBetween ratePrix">
+                        <p>${rate} ${count} </p>
+                        <p> ${prix} </p>
+                    </div>
+                    <a href="" class="btn ">Ajouter au panier</a> <!-- bouton Ajouter au panier -->
+                </div>
+            </div>`
+
 }

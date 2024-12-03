@@ -1,5 +1,12 @@
 * {
-text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-family:"Inter", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 .flex {
@@ -7,15 +14,68 @@ text-decoration: none;
     flex-wrap: wrap;
 }
 
+h2 {
+    padding-bottom: 10px;
+}
 
+.spaceAround {
+    justify-content: space-around;
+}
+
+.spaceBetween {
+    justify-content: space-between;
+}
 .card {
     display: flex; 
     flex-direction: column; 
     border-radius: 9px  9px 9px 9px;
     width: 272px;
-    border-color: #000000;
+    background-color: lightyellow;
+    overflow: hidden;
+    gap: 10px;
 }
 
+#result {
+    gap: 30px;
+}
 
+.relative {
+    position: relative;
+}
 
+.absolute {
+    position: absolute;
+}
 
+.img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+}
+
+.description {
+    padding: 0 30px;
+}
+
+.btn {
+    background-color: black;
+    border-radius: 4px;
+    padding: 10px;
+    color: white;
+    display: inline-block;
+    margin: 10px 0px;
+    justify-content: center;
+}
+
+.categorie {
+    top: 5px;
+    left: 5px;
+    background-color: black;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.ratePrix {
+    width: 100%;
+    padding: 10px 15px 10px 0px;
+}
