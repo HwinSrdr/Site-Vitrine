@@ -17,7 +17,7 @@ fetch(`https://fakestoreapi.com/products`)
 //Rôle: Afficher une produit dans la page html
 //Paramètre: Le produit
 function affiche (prod){
-    let img = prod.image
+    let img = prod.image;
     let nom = prod.title;
     let description = prod.description;
     let categorie = prod.category;
